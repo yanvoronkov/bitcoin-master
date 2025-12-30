@@ -1,0 +1,24 @@
+{
+  "name": "BitcoinMaster - Крипторобот с ИИ",
+  "short_name": "BitcoinMaster",
+  "description": "Создавай капитал в криптовалюте на автопилоте с доходностью 4-5% в месяц",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#cca958",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./images/icon_bitcoin-master.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./images/icon_bitcoin-master.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
