@@ -1,4 +1,12 @@
 /* ===========================
+   Плавная прокрутка
+   =========================== */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Компенсация для fixed header */
+}
+
+/* ===========================
    Кастомизация скроллбара
    =========================== */
 ::-webkit-scrollbar {
@@ -23,9 +31,49 @@
    =========================== */
 .gradient-text {
     background: linear-gradient(90deg, #ffffff 0%, #cca958 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* ===========================
+   Градиентные кнопки
+   =========================== */
+.btn-gradient {
+    background: linear-gradient(135deg, #cca958 0%, #fed56f 100%);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.btn-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #fed56f 0%, #ffebb3 100%);
+    transition: left 0.4s ease;
+    z-index: -1;
+}
+
+.btn-gradient:hover::before {
+    left: 0;
+}
+
+/* Кнопка scroll to top (без overflow) */
+.btn-scroll-top {
+    background: linear-gradient(135deg, #cca958 0%, #fed56f 100%);
+}
+
+.btn-scroll-top:hover {
+    background: linear-gradient(135deg, #fed56f 0%, #ffebb3 100%);
+}
+
+
+
+
 
 /* ===========================
    Скрытие маркеров details
