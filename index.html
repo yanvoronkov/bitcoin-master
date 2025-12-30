@@ -312,7 +312,7 @@
                                 Без стресса. Без риска слить. Без передачи денег.
                             </p>
                             <p class="text-gray-400 text-base leading-relaxed max-w-[600px] mx-auto lg:mx-0">
-                                BitcoinMaster <img src="./images/icon_bitcoin-master.png" alt="BitcoinMaster" class="inline-block h-5 w-auto align-text-bottom" /> — ИИ-бот, который торгует 24/7 на вашем счёте, принося стабильные <span
+                                BitcoinMaster <img src="./images/icon_bitcoin-master.png" alt="BitcoinMaster" class="inline-block h-5 w-auto align-text-bottom" /> — ИИ-бот, который торгует 24/7 на вашем счёте, принося стабильные<br class="md:hidden" /> <span
                                     class="text-white font-bold border-b border-primary">4–5% в месяц</span>.
                             </p>
                         </div>
@@ -1007,6 +1007,38 @@
                 mobileMenu.classList.remove('active');
                 mobileMenuOverlay.classList.remove('active');
                 document.body.style.overflow = '';
+            });
+        });
+    </script>
+    
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" 
+        class="fixed bottom-8 right-8 z-50 size-8 rounded-full bg-primary hover:bg-primary-hover text-black shadow-lg hover:shadow-[0_0_30px_rgba(204,169,88,0.6)] transition-all duration-300 opacity-0 pointer-events-none translate-y-4"
+        aria-label="Прокрутить наверх">
+        <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script>
+        // Scroll to Top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        // Show button when scrolled down
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+            }
+        });
+        
+        // Scroll to top on click
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
         });
     </script>
