@@ -193,3 +193,126 @@ details>summary::-webkit-details-marker {
         display: none !important;
     }
 }
+
+/* ===========================
+   Стили для юридических страниц
+   (Политика конфиденциальности и Пользовательское соглашение)
+   =========================== */
+
+.legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-content h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ffffff 0%, #cca958 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.legal-content h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    color: #fed56f;
+}
+
+.legal-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #cca958;
+}
+
+.legal-content p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: #d1d5db;
+}
+
+.legal-content ul,
+.legal-content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    color: #d1d5db;
+}
+
+.legal-content li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.legal-content strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.legal-content a {
+    color: #cca958;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.legal-content a:hover {
+    color: #fed56f;
+}
+
+.legal-header-box {
+    background: linear-gradient(135deg, rgba(204, 169, 88, 0.1) 0%, rgba(254, 213, 111, 0.05) 100%);
+    border: 1px solid rgba(204, 169, 88, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+.legal-section {
+    background: rgba(26, 26, 26, 0.6);
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.warning-box {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.warning-box p {
+    color: #fca5a5;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .legal-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .legal-content h2 {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .legal-content h3 {
+        font-size: 1rem;
+    }
+
+    .legal-section {
+        padding: 1rem;
+    }
+
+    .legal-section p,
+    .legal-content li {
+        font-size: 0.8rem;
+    }
+}

@@ -234,6 +234,10 @@
                                 <a class="text-white hover:text-[#fed56f] transition-colors text-sm font-medium"
                                     href="#audience">Для кого</a>
                                 <a class="text-white hover:text-[#fed56f] transition-colors text-sm font-medium"
+                                    href="#reviews">Отзывы</a>
+                                <a class="text-white hover:text-[#fed56f] transition-colors text-sm font-medium"
+                                    href="#bonus">Бонус</a>
+                                <a class="text-white hover:text-[#fed56f] transition-colors text-sm font-medium"
                                     href="#faq">FAQ</a>
                             </nav>
                         </div>
@@ -296,25 +300,12 @@
                     </div>
                     <div class="flex-1 lg:basis-2/5 w-full flex justify-center relative group hero-image-container">
                         <div
-                            class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent blur-2xl opacity-50 rounded-full">
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-primary/20 to-transparent blur-2xl opacity-50 rounded-full">
                         </div>
-                        <div class="relative w-full aspect-square max-w-[500px] rounded-2xl shadow-2xl border border-[#333] bg-black overflow-hidden">
+                        <div class="relative w-full aspect-square max-w-[500px] rounded-2xl overflow-hidden">
                             <div class="w-full h-full bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden relative"
                                 data-alt="Futuristic golden bitcoin visualization with digital network connections on black background"
-                                style='background-image: url("./images/bg-hero-bitcoin.jpeg");'>
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                                <!-- <div
-                                    class="absolute bottom-6 left-6 right-6 p-4 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl flex items-center gap-4 animate-bounce duration-[3000ms]">
-                                <div
-                                    class="size-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-500">
-                                    <span class="material-symbols-outlined">trending_up</span>
-                                </div> -->
-                                <!-- <div>
-                                    <div class="text-xs text-gray-400">Текущая прибыль</div>
-                                    <div class="text-white font-bold">+4.85% <span class="text-gray-500 font-normal">за
-                                            этот месяц</span></div>
-                                </div> -->
-                            </div>
+                                style='background-image: url("./images/bg-hero-bitcoin.png");'>
                             </div>
                         </div>
                     </div>
@@ -326,7 +317,7 @@
                 <div class="layout-content-container flex flex-col max-w-[1200px] w-full px-4 md:px-10">
                     <div class="flex flex-col gap-10">
                         <div class="text-center md:text-left max-w-[700px]">
-                            <h2 class="text-3xl md:text-4xl font-bold mb-4">Почему пользователи выбирают нас?</h2>
+                            <h2 class="text-3xl md:text-4xl font-bold mb-4">Почему пользователи <span class="text-primary"></span>выбирают нас?</span></h2>
                             <p class="text-gray-400">Мы объединили технологии и безопасность, чтобы вы могли
                                 зарабатывать пассивно.</p>
                         </div>
@@ -338,8 +329,7 @@
                                     <span class="material-symbols-outlined">bar_chart</span>
                                 </div>
                                 <h3 class="text-xl font-bold text-white mb-2">$10+ млн депозит</h3>
-                                <p class="text-gray-400 text-sm leading-relaxed">5 лет успешной работы на рынке
-                                    криптовалют с подтвержденной репутацией.</p>
+                                <p class="text-gray-400 text-sm leading-relaxed">5 лет успешной работы с подтвержденной репутацией</p>
                             </div>
                             <div
                                 class="group p-6 rounded-xl bg-surface-card border border-[#333] hover:border-primary/50 transition-colors">
@@ -368,7 +358,7 @@
                                     <span class="material-symbols-outlined">verified_user</span>
                                 </div>
                                 <h3 class="text-xl font-bold text-white mb-2">Безопасность API</h3>
-                                <p class="text-gray-400 text-sm leading-relaxed">Работает на вашей бирже. Без
+                                <p class="text-gray-400 text-sm leading-relaxed">Работает на бирже. Без
                                     доверительного управления. Можно отключить в любой момент.</p>
                             </div>
                             <div
@@ -389,7 +379,7 @@
                                 </div>
                                 <h3 class="text-xl font-bold text-white mb-2">Интуитивный интерфейс</h3>
                                 <p class="text-gray-400 text-sm leading-relaxed">Подробные инструкции для новичков и
-                                    отзывчивая техническая поддержка 24/7.</p>
+                                    отзывчивая техническая поддержка.</p>
                             </div>
                         </div>
                     </div>
@@ -399,7 +389,7 @@
         <section class="py-16 md:py-24 bg-background-dark" id="comparison">
             <div class="layout-container flex justify-center w-full">
                 <div class="layout-content-container flex flex-col max-w-[1000px] w-full px-4 md:px-10">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Чем мы отличаемся от других?</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Чем мы <span class="text-primary">отличаемся от других?</span></h2>
                     <!-- Мобильная версия: карточки (< 768px) -->
                     <div class="md:hidden flex flex-col gap-4">
                         <!-- Карточка: Алгоритм -->
@@ -414,7 +404,7 @@
                                     </span>
                                     <div>
                                         <p class="text-xs comparison-label-cross uppercase mb-1 font-semibold">стандартные боты</p>
-                                        <p class="text-gray-400 text-sm">Алгоритм по шаблону</p>
+                                        <p class="text-gray-400 text-sm">По шаблону</p>
                                     </div>
                                 </div>
                                 <div class="h-px bg-[#333]"></div>
@@ -442,7 +432,7 @@
                                     <span class="comparison-icon comparison-icon-cross"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
                                     <div>
                                         <p class="text-xs comparison-label-cross uppercase mb-1 font-semibold">стандартные боты</p>
-                                        <p class="text-gray-400 text-sm">Работают с альткоинами</p>
+                                        <p class="text-gray-400 text-sm">Альткоины, которые долго бывают в просадке</p>
                                     </div>
                                 </div>
                                 <div class="h-px bg-[#333]"></div>
@@ -494,7 +484,7 @@
                                     <span class="comparison-icon comparison-icon-cross"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></span>
                                     <div>
                                         <p class="text-xs comparison-label-cross uppercase mb-1 font-semibold">стандартные боты</p>
-                                        <p class="text-gray-400 text-sm">Часто скрытые комиссии</p>
+                                        <p class="text-gray-400 text-sm">Часто скрытые</p>
                                     </div>
                                 </div>
                                 <div class="h-px bg-[#333]"></div>
@@ -503,7 +493,7 @@
                                     <div>
                                         <p class="text-xs comparison-label-check uppercase mb-1 font-semibold">BitcoinMaster</p>
                                         <p class="text-white text-sm">
-                                            Прозрачность и открытая статистика
+                                            Честно и открыто
                                         </p>
                                     </div>
                                 </div>
@@ -513,7 +503,7 @@
                         <!-- Карточка: Комьюнити -->
                         <div class="rounded-xl border border-[#333] bg-surface-card overflow-hidden">
                             <div class="px-4 py-3 bg-[#222] border-b border-[#333]">
-                                <h3 class="text-white font-bold text-sm">Комьюнити</h3>
+                                <h3 class="text-white font-bold text-sm">Сообщество</h3>
                             </div>
                             <div class="p-4 space-y-3">
                                 <div class="flex items-start gap-2">
@@ -561,7 +551,7 @@
                                 <tbody class="divide-y divide-[#333]">
                                     <tr class="hover:bg-white/5 transition-colors">
                                         <td class="px-6 py-4 text-white font-medium">Алгоритм</td>
-                                        <td class="px-6 py-4 text-gray-400 border-l border-[#333]">Алгоритм по
+                                        <td class="px-6 py-4 text-gray-400 border-l border-[#333]">По
                                             шаблону</td>
                                         <td class="px-6 py-4 text-white border-l border-[#333] bg-primary/5">
                                             <div class="flex items-center gap-1.5">
@@ -571,8 +561,7 @@
                                     </tr>
                                     <tr class="hover:bg-white/5 transition-colors">
                                         <td class="px-6 py-4 text-white font-medium">Активы</td>
-                                        <td class="px-6 py-4 text-gray-400 border-l border-[#333]">Работают с
-                                            альткоинами</td>
+                                        <td class="px-6 py-4 text-gray-400 border-l border-[#333]">Альткоины, которые долго бывают в просадке</td>
                                         <td class="px-6 py-4 text-white border-l border-[#333] bg-primary/5">
                                             <div class="flex items-center gap-1.5">
                                                 <span>Только Bitcoin — надёжнее, ликвиднее</span>
@@ -591,16 +580,16 @@
                                     </tr>
                                     <tr class="hover:bg-white/5 transition-colors">
                                         <td class="px-6 py-4 text-white font-medium">Комиссии</td>
-                                        <td class="px-6 py-4 text-gray-400 border-l border-[#333]">Часто скрытые комиссии
+                                        <td class="px-6 py-4 text-gray-400 border-l border-[#333]">Часто скрытые
                                         </td>
                                         <td class="px-6 py-4 text-white border-l border-[#333] bg-primary/5">
                                             <div class="flex items-center gap-1.5">
-                                                <span>Прозрачность и открытая статистика</span>
+                                                <span>Честно и открыто</span>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr class="hover:bg-white/5 transition-colors">
-                                        <td class="px-6 py-4 text-white font-medium">Комьюнити</td>
+                                        <td class="px-6 py-4 text-white font-medium">Сообщество</td>
                                         <td class="px-6 py-4 text-gray-400 border-l border-[#333]">Нет комьюнити и
                                             обучения</td>
                                         <td class="px-6 py-4 text-white border-l border-[#333] bg-primary/5">
@@ -625,41 +614,68 @@
         <section class="py-16 md:py-24 bg-surface-dark border-y border-[#222]" id="audience">
             <div class="layout-container flex justify-center w-full">
                 <div class="layout-content-container flex flex-col max-w-[1200px] w-full px-4 md:px-10">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Кому подходит наилучшим образом?</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
-                        <div
-                            class="p-6 rounded-xl bg-surface-card border border-[#333] flex flex-col items-center text-center">
-                            <div class="mb-4 text-primary">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center leading-tight">
+                        Кому подходит <span class="text-primary">наилучшим образом?</span>
+                    </h2>
+                    <div class="flex flex-col gap-6 mb-16">
+                        <!-- Карточка: Инвесторам -->
+                        <div class="group bg-surface-card rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-[#333] hover:border-primary/50 flex flex-col md:flex-row items-center md:items-start gap-6 h-full">
+                            <div class="shrink-0 flex items-center justify-center w-16 h-16 rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
                                 <span class="material-symbols-outlined text-[40px]">business_center</span>
                             </div>
-                            <h3 class="text-xl font-bold text-white mb-2">Инвесторам</h3>
-                            <p class="text-gray-400 text-sm">Получаете пассивный доход в $ выше, чем в большинстве инструментов — с полной прозрачностью и контролем</p>
+                            <div class="flex-1 text-center md:text-left">
+                                <h3 class="text-xl font-bold text-white mb-2">Инвесторам</h3>
+                                <p class="text-gray-400 leading-relaxed">
+                                    Получаете пассивный доход в $ выше, чем в большинстве инструментов — с полным контролем
+                                </p>
+                            </div>
                         </div>
-                        <div
-                            class="p-6 rounded-xl bg-surface-card border border-[#333] flex flex-col items-center text-center">
-                            <div class="mb-4 text-primary">
+
+                        <!-- Карточка: Трейдерам -->
+                        <div class="group bg-surface-card rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-[#333] hover:border-primary/50 flex flex-col md:flex-row items-center md:items-start gap-6 h-full">
+                            <div class="shrink-0 flex items-center justify-center w-16 h-16 rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
                                 <span class="material-symbols-outlined text-[40px]">trending_up</span>
                             </div>
-                            <h3 class="text-xl font-bold text-white mb-2">Трейдерам</h3>
-                            <p class="text-gray-400 text-sm">Обгоняете рынок без выгорания. Не нужно сидеть сутками у монитора — бот трудится за вас без эмоций и срывов</p>
+                            <div class="flex-1 text-center md:text-left">
+                                <h3 class="text-xl font-bold text-white mb-2">Трейдерам</h3>
+                                <p class="text-gray-400 leading-relaxed">
+                                    Обгоняете рынок без выгорания. Не нужно сидеть сутками у монитора — бот трудится без эмоций и срывов
+                                </p>
+                            </div>
                         </div>
-                        <div
-                            class="p-6 rounded-xl bg-surface-card border border-[#333] flex flex-col items-center text-center">
-                            <div class="mb-4 text-primary">
+
+                        <!-- Карточка: Лидерам мнений -->
+                        <div class="group bg-surface-card rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-[#333] hover:border-primary/50 flex flex-col md:flex-row items-center md:items-start gap-6 h-full">
+                            <div class="shrink-0 flex items-center justify-center w-16 h-16 rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
                                 <span class="material-symbols-outlined text-[40px]">campaign</span>
                             </div>
-                            <h3 class="text-xl font-bold text-white mb-2">Лидерам мнений</h3>
-                            <p class="text-gray-400 text-sm">Монетизируете свою аудиторию — платим до 50% комиссионных. Ускоряете темп достижения финансовой независимости</p>
+                            <div class="flex-1 text-center md:text-left">
+                                <h3 class="text-xl font-bold text-white mb-2">Лидерам мнений</h3>
+                                <p class="text-gray-400 leading-relaxed">
+                                    Монетизируете свою аудиторию — платим до 50% комиссионных. Ускоряете темп достижения финансовой независимости
+                                </p>
+                            </div>
                         </div>
-                        <div
-                            class="p-6 rounded-xl bg-surface-card border border-[#333] flex flex-col items-center text-center">
-                            <div class="mb-4 text-primary">
+
+                        <!-- Карточка: Новичкам -->
+                        <div class="group bg-surface-card rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-[#333] hover:border-primary/50 flex flex-col md:flex-row items-center md:items-start gap-6 h-full">
+                            <div class="shrink-0 flex items-center justify-center w-16 h-16 rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
                                 <span class="material-symbols-outlined text-[40px]">laptop_chromebook</span>
                             </div>
-                            <h3 class="text-xl font-bold text-white mb-2">Новичкам</h3>
-                            <p class="text-gray-400 text-sm">Проходите обучение, безопасно начинаете и видите результаты уже в первые дни</p>
+                            <div class="flex-1 text-center md:text-left">
+                                <h3 class="text-xl font-bold text-white mb-2">Новичкам</h3>
+                                <p class="text-gray-400 leading-relaxed">
+                                    Проходите обучение, безопасно начинаете и видите результаты уже в первые дни
+                                </p>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 md:py-24 bg-background-dark border-y border-[#222]" id="reviews">
+            <div class="layout-container flex justify-center w-full">
+                <div class="layout-content-container flex flex-col max-w-[1200px] w-full px-4 md:px-10">
                     <div class="flex flex-col items-center">
                         <h3 class="text-3xl md:text-4xl font-bold mb-10 text-center">Что говорят люди об этом инструменте</h3>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-6">
@@ -725,7 +741,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-16 md:py-24 bg-background-dark relative overflow-hidden">
+        <section class="py-16 md:py-24 bg-background-dark relative overflow-hidden" id="bonus">
             <div
                 class="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none">
             </div>
@@ -737,7 +753,7 @@
                         class="inline-block px-3 py-1 rounded-md bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-4">
                         🎁 Бонус для новых участников
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Курс «CryptoВышка» в подарок</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Курс «CryptoВышка» <span class="text-primary">в подарок</span></h2>
                 </div>
                 
                 <!-- Контент курса -->
@@ -761,7 +777,7 @@
                             </li>
                             <li class="flex items-start gap-2">
                                 <span class="material-symbols-outlined text-primary mt-0.5">check_circle</span>
-                                <span class="text-gray-300">Словарь криптана для новичков</span>
+                                <span class="text-gray-300">Словарь криптана с топ 50 терминами</span>
                             </li>
                         </ul>
                         <div class="pt-4 border-t border-white/10">
@@ -788,7 +804,7 @@
         <section class="py-16 md:py-24 bg-surface-dark border-t border-[#222]" id="faq">
             <div class="layout-content-container flex flex-col max-w-[800px] w-full px-4 md:px-10 mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center tracking-tight">Часто задаваемые
-                    вопросы</h2>
+                    <span class="text-primary">вопросы</span></h2>
                 <div class="flex flex-col gap-4">
                     <details
                         class="group bg-surface-card rounded-lg border border-primary/30 open:bg-[#1a1814] transition-all">
@@ -835,7 +851,7 @@
                                 class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
                         </summary>
                         <div class="px-6 pb-6 text-gray-400 leading-relaxed">
-                            Тестовый тариф стоит всего 10$, чтобы вы могли попробовать в деле. Начальный депозит 300-350$ 
+                            Тестовый тариф стоит всего 10$, чтобы вы могли попробовать в деле. Рекомендуемый начальный депозит 350$. 
                         </div>
                     </details>
                     <details
@@ -859,7 +875,7 @@
                 <div class="size-16 rounded-full bg-[#2a2415] flex items-center justify-center text-primary mb-6">
                     <span class="material-symbols-outlined text-[32px]">handshake</span>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Взаимовыгодное сотрудничество</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="text-primary">Взаимовыгодное</span> сотрудничество</h2>
                 <p class="text-gray-400 text-lg mb-8 max-w-[600px]">
                     Компания получает прибыль только тогда, когда вы делаете профит! Поэтому мы заинтересованы в вашем
                     результате и предоставим лучший сервис!
@@ -882,14 +898,14 @@
                         <p class="text-gray-500 text-sm">© 2026 Все права защищены</p>
                     </div>
                     <div class="flex items-center gap-6">
-                        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Политика
+                        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="/privacy-policy.html">Политика
                             конфиденциальности</a>
-                        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Договор оферты</a>
+                        <a class="text-gray-400 hover:text-white transition-colors text-sm" href="/terms-of-service.html">Пользовательское соглашение</a>
                     </div>
                     <div class="flex items-center gap-6">
                         <!-- Telegram -->
                         <a class="text-primary hover:text-primary-hover transition-colors"
-                            href="#" aria-label="Telegram">
+                            href="https://t.me/bitcoin_master_official" aria-label="Telegram">
                             <svg class="size-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
                             </svg>
@@ -932,9 +948,25 @@
                 <span class="material-symbols-outlined text-primary">groups</span>
                 <span>Для кого</span>
             </a>
+            <a href="#reviews" class="mobile-menu-link">
+                <span class="material-symbols-outlined text-primary">reviews</span>
+                <span>Отзывы</span>
+            </a>
+            <a href="#bonus" class="mobile-menu-link">
+                <span class="material-symbols-outlined text-primary">card_giftcard</span>
+                <span>Бонус</span>
+            </a>
             <a href="#faq" class="mobile-menu-link">
                 <span class="material-symbols-outlined text-primary">help</span>
                 <span>FAQ</span>
+            </a>
+            <a href="/privacy-policy.html" class="mobile-menu-link">
+                <span class="material-symbols-outlined text-primary">policy</span>
+                <span>Политика конфиденциальности</span>
+            </a>
+            <a href="/terms-of-service.html" class="mobile-menu-link">
+                <span class="material-symbols-outlined text-primary">description</span>
+                <span>Пользовательское соглашение</span>
             </a>
         </nav>
     </div>
