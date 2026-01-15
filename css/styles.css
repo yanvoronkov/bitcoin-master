@@ -44,6 +44,7 @@ html {
   position: relative;
   overflow: hidden;
   z-index: 0;
+  text-align: center;
 }
 
 .btn-gradient::before {
@@ -179,6 +180,11 @@ details > summary::-webkit-details-marker {
   transform: rotate(90deg);
 }
 
+.privacy-policy {
+    display: flex;
+    gap: 30px;
+}
+
 /* ===========================
    Адаптивность
    =========================== */
@@ -188,6 +194,9 @@ details > summary::-webkit-details-marker {
   .hero-image-container {
     display: none !important;
   }
+  .privacy-policy {
+    gap: 10px;
+}
 }
 
 /* ===========================
@@ -317,14 +326,4 @@ details > summary::-webkit-details-marker {
   }
 }
 
-/* ===========================
-   Адаптация кнопок для мобильных
-   =========================== */
-@media (max-width: 768px) {
-  /* Увеличенный вертикальный padding для всех кнопок на мобильных */
-  .btn-gradient,
-  a.btn-gradient {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-  }
-}
+
