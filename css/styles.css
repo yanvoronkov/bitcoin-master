@@ -326,6 +326,5 @@ details > summary::-webkit-details-marker {
   a.btn-gradient {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
-    min-height: 3rem;
   }
 }
